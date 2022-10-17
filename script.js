@@ -40,7 +40,7 @@ function setup() {
   createCanvas(800, 500)
   background(255)
 
-// ----- get user input infos
+// ----- get user input infos, preload New York's weather as interface(Because we're in NYC!!)
   let button = select('#search')
   let url = api + 'New York' + apiKey + units
   loadJSON(url, gotData)
